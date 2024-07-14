@@ -1,6 +1,6 @@
 # Cooldown Button
 
-![alt](http://kidscancode.org/godot_recipes/4.x/img/)
+![alt](http://kidscancode.org/godot_recipes/4.x/img/cooldown_01.gif)
 
 Tutorial:
 http://kidscancode.org/godot_recipes/4.x/ui/cooldown_button
