@@ -1,0 +1,38 @@
+[gd_scene load_steps=5 format=3 uid="uid://b0q0sgjudn7u0"]
+
+[ext_resource type="PackedScene" uid="uid://2o08papwmj6c" path="res://AbilityButton.tscn" id="1"]
+[ext_resource type="Texture2D" uid="uid://c8ugfptwffvmy" path="res://assets/icons/fire-ring.png" id="2"]
+[ext_resource type="Texture2D" uid="uid://dlxp5t0v3ljbx" path="res://assets/icons/boot-stomp.png" id="3"]
+[ext_resource type="Texture2D" uid="uid://b0xnldfybponr" path="res://assets/icons/grasping-claws.png" id="4"]
+
+[node name="ButtonBar" type="HBoxContainer"]
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -135.5
+offset_top = -95.0
+offset_right = 135.5
+offset_bottom = -31.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_constants/separation = 5
+
+[node name="AbilityButton" parent="." instance=ExtResource("1")]
+layout_mode = 2
+
+[node name="AbilityButton2" parent="." instance=ExtResource("1")]
+layout_mode = 2
+texture_normal = ExtResource("3")
+cooldown = 5.0
+
+[node name="AbilityButton3" parent="." instance=ExtResource("1")]
+layout_mode = 2
+texture_normal = ExtResource("2")
+cooldown = 10.0
+
+[node name="AbilityButton4" parent="." instance=ExtResource("1")]
+layout_mode = 2
+texture_normal = ExtResource("4")
+cooldown = 0.5

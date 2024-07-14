@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://2o08papwmj6c"]
+
+[ext_resource type="FontFile" path="res://button_timer_font.tres" id="1"]
+[ext_resource type="Texture2D" uid="uid://bra66tsrdvlvm" path="res://assets/icons/energy-arrow.png" id="2"]
+[ext_resource type="Script" path="res://AbilityButton.gd" id="3"]
+
+[node name="AbilityButton" type="TextureButton"]
+offset_right = 64.0
+offset_bottom = 64.0
+texture_normal = ExtResource("2")
+script = ExtResource("3")
+cooldown = 1.5
+
+[node name="Sweep" type="TextureProgressBar" parent="."]
+modulate = Color(0.145098, 0.145098, 0.145098, 0.87451)
+layout_mode = 0
+anchor_right = 1.0
+anchor_bottom = 1.0
+value = 100.0
+fill_mode = 5
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+
+[node name="Counter" type="MarginContainer" parent="."]
+layout_mode = 0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -19.0
+mouse_filter = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_right = 5
+
+[node name="Value" type="Label" parent="Counter"]
+layout_mode = 2
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 1
+theme_override_fonts/font = ExtResource("1")
+text = "0.0"
+horizontal_alignment = 2
+clip_text = true
+
+[connection signal="pressed" from="." to="." method="_on_AbilityButton_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
