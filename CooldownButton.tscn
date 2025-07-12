@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dvfl4nip6bohh"]
 
 [ext_resource type="FontFile" path="res://button_timer_font.tres" id="1"]
-[ext_resource type="Script" path="res://CooldownButton.gd" id="2"]
+[ext_resource type="Script" uid="uid://b64qd8l8lsim6" path="res://CooldownButton.gd" id="2"]
 [ext_resource type="Texture2D" uid="uid://dlxp5t0v3ljbx" path="res://assets/icons/boot-stomp.png" id="4"]
 
 [node name="CooldownButton" type="TextureButton"]

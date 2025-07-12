@@ -2,7 +2,7 @@
 
 [ext_resource type="FontFile" path="res://button_timer_font.tres" id="1"]
 [ext_resource type="Texture2D" uid="uid://bra66tsrdvlvm" path="res://assets/icons/energy-arrow.png" id="2"]
-[ext_resource type="Script" path="res://AbilityButton.gd" id="3"]
+[ext_resource type="Script" uid="uid://cexxx2qp8u5ui" path="res://AbilityButton.gd" id="3"]
 
 [node name="AbilityButton" type="TextureButton"]
 offset_right = 64.0
